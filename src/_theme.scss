@@ -256,6 +256,41 @@ $lvl3: if($isDark, $base, $crust);
   }
 }
 
+.ui.ui.ui.button:not(.inverted, .basic) {
+
+  &.primary:hover, &.primary:active, &.primary:focus {
+    background: #{ctx_lighten($accent, 6%)};
+
+    &:active {
+      border: 1px $accent solid;
+    }
+  }
+
+  &.green:hover, &.green:active, &.green:focus {
+    background: #{ctx_lighten($green, 6%)};
+    
+    &:active {
+      border: 1px $green solid;
+    }
+  }
+
+  &.red:hover, &.red:active, &.red:focus {
+    background: #{ctx_lighten($red, 6%)};
+    
+    &:active {
+      border: 1px $red solid;
+    }
+  }
+
+  &.teal:hover, &.teal:active, &.teal:focus {
+    background: #{ctx_lighten($teal, 6%)};
+    
+    &:active {
+      border: 1px $teal solid;
+    }
+  }
+}
+
 .ui.basic.modal {
   background-color: $lvl3;
 }
